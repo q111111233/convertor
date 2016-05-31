@@ -1,25 +1,17 @@
 //Simple unit conversion code//
+//functions to be used by a cooking app that convert between units. For example, a function that converts gallons to liters. Create a project for this like you did for the calculator, so that you can return and build a front-end for this later//
 
-var Adam = function(num1, num2) {
-	return num1 + num2;
+var Gallon2Liter = function(num1) {
+	return (num1 * 3.78541);
 };
 
-var Sunshine = function(num1, num2) {
-	return num1 - num2;
+var Foot2Meter = function(num2) {
+	return (num2 * 0.3048);
 };
 
-var Mike = function(num1, num2) {
-	return num1 * num2;
-};
 
-var Dave = function(num1, num2) {
-	return num1 / num2;
-};
+var num1 = parseInt(prompt("Gimme a number of Gallons:"));
+var num2 = parseInt(prompt("Gimme a number of Feet:"));
 
-var num1 = parseInt(prompt("Gimme a number:"));
-var num2 = parseInt(prompt("Gimme another number!"));
-
-alert(Adam(num1, num2));
-alert(Sunshine(num1, num2));
-alert(Mike(num1, num2));
-alert(Dave(num1, num2));
+alert(Gallon2Liter(num1));
+alert(Foot2Meter(num2));
